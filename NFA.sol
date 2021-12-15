@@ -44,12 +44,12 @@ pragma solidity ^0.8.10;
 // MMMMMMMMMMMMMMMMMMMMMMMMNKkdc;,.....;oddddddddxxkkO00XNWWWMMMMMMMMMMMMMMMMMMMMMM
 // MMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNK0kxdxOOOOOOO00KXNWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
+import "./ERC721.sol";
+import "./ERC721Enumerable.sol";
+import "./Counters.sol";
+import "./Ownable.sol";
+import "./MerkleProof.sol";
+import "./Strings.sol";
 
 contract NFA is ERC721, ERC721Enumerable, Ownable {
     using Counters for Counters.Counter;
